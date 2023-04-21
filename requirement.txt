@@ -104,4 +104,4 @@ webencodings==0.5.1
 Werkzeug==1.0.1
 widgetsnbextension==3.5.1
 yarg==0.1.9
-xgboost==1.23.5
+xgboost==1.6.0
