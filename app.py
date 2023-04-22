@@ -2,6 +2,12 @@ import streamlit as st
 import pickle
 import numpy as np
 import xgboost
+# Unpickle model
+with open('./final_xg_model.pkl', 'rb') as f:
+  bst = pickle.load(f)
+
+# Export model as binary format
+bst._Booster.save_model('your_model_binary.model')
 import base64
 
 @st.cache(allow_output_mutation=True)
