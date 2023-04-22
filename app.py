@@ -7,7 +7,7 @@ with open('./final_xg_model.pkl', 'rb') as f:
   bst = pickle.load(f)
 
 # Export model as binary format
-bst._Booster.save_model('your_model_binary.model')
+bst._Booster.save_model('final_xg_model')
 import base64
 
 @st.cache(allow_output_mutation=True)
