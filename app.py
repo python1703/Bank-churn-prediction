@@ -1,7 +1,7 @@
 import streamlit as st
 import pickle
 import numpy as np
-
+import xgboost
 import base64
 
 @st.cache(allow_output_mutation=True)
